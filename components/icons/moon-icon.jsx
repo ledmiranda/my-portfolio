@@ -153,3 +153,5 @@ const MoonIcon = ({ className, ...rest }) => (
     </circle>
   </svg>
 );
+
+export default MoonIcon;
