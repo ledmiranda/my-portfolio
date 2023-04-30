@@ -20,7 +20,7 @@ const FeaturedArticle = ({
   link,
 }: IFeaturedArticle) => {
   return (
-    <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl">
+    <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl dark:bg-dark dark:border-light">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl" />
       <Link
         href={link}
@@ -30,6 +30,10 @@ const FeaturedArticle = ({
         <FramerImage
           width={200}
           height={200}
+          priority
+          sizes="(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          50vw"
           src={img}
           alt={title}
           className="w-full h-auto"
@@ -43,7 +47,9 @@ const FeaturedArticle = ({
         </h2>
       </Link>
       <p className="text-sm mb-2">{summary}</p>
-      <span className="text-primary font-semibold">{time} min</span>
+      <span className="text-primary font-semibold dark:text-primaryDark">
+        {time} min
+      </span>
     </li>
   );
 };

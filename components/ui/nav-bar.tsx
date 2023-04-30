@@ -7,12 +7,40 @@ import { PersonalLinks } from '../../models/personal-info';
 import useThemeSwitcher from '../../shared/hooks/useThemeSwitcher';
 import SunIcon from '../icons/sun-icon';
 import MoonIcon from '../icons/moon-icon';
+import { useState } from 'react';
 
 const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const { mode, setMode } = useThemeSwitcher();
 
+  const menuClickHandler = () => {
+    setIsOpen((currentValue) => !currentValue);
+  };
+
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
+    <header
+      className="w-full px-32 py-8 font-medium flex items-center justify-between
+      dark:text-light
+    "
+    >
+      <button
+        className="flex-col justify-center items-center hidden lg:flex"
+        onClick={menuClickHandler}
+      >
+        <span
+          className={`bg-dark transition-all duration-300 ease-out dark:bg-light block h-0.5 w-6 rounded-sm 
+          ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}
+        ></span>
+        <span
+          className={`bg-dark transition-all duration-300 ease-out dark:bg-light block h-0.5 w-6 rounded-sm my-0.5 ${
+            isOpen ? 'opacity-0' : 'opacity-100'
+          }`}
+        ></span>
+        <span
+          className={`bg-dark transition-all duration-300 ease-out dark:bg-light block h-0.5 w-6 rounded-sm 
+          ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'} `}
+        ></span>
+      </button>
       <nav>
         <CustomLink href="/" title="Home" className="mr-4" />
         <CustomLink href="/about" title="About" className="mx-4" />
@@ -39,7 +67,9 @@ const NavBar = () => {
           <GithubIcon />
         </motion.a>
         <button
-          className="ml-3 flex items-center justify-center rounded-full p-1"
+          className={`ml-3 flex items-center justify-center rounded-full p-1
+            ${mode === 'light' ? 'bg-dark text-light' : 'bg-light text-dark'}
+          `}
           onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
         >
           {mode === 'dark' ? (

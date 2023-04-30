@@ -12,7 +12,7 @@ const ArticlesPage = () => {
         <title>LM - Articles</title>
         <meta name="description" content="Articles description" />
       </Head>
-      <div className="flex w-full flex-col items-center justify-center mb-16 overflow-hidden">
+      <div className="flex w-full flex-col items-center justify-center mb-16 overflow-hidde dark:text-light">
         <Layout className="pt-16">
           <AnimatedText text="Dev articles" className="mb-16" />
           <ul className="grid grid-cols-2 gap-16">

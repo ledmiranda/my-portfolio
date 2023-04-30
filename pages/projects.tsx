@@ -12,7 +12,7 @@ const ProjectsPage = () => {
         <title>LM - Projects</title>
         <meta name="description" content="Projects page" />
       </Head>
-      <div className="flex w-full flex-col items-center justify-center mb-16">
+      <div className="flex w-full flex-col items-center justify-center mb-16 dark:text-light">
         <Layout className="pt-16">
           <AnimatedText text="My Personal Projects" className="mb-16" />
           <div className="grid grid-cols-12 gap-24 gap-y-32">

@@ -32,10 +32,12 @@ const TimelineDetail = ({
         <h3 className="capitalize font-bold text-2xl">
           {title}&nbsp;
           {company && (
-            <span className="text-primary capitalize">@{company}</span>
+            <span className="text-primary dark:text-primaryDark capitalize">
+              @{company}
+            </span>
           )}
         </h3>
-        <span className="capitalize font-medium text-dark/75">
+        <span className="capitalize font-medium text-dark/75 dark:text-light/75">
           {time} | {location}
         </span>
         <p className="font-medium w-full">{description}</p>
