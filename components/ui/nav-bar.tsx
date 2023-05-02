@@ -61,16 +61,16 @@ const NavBar = () => {
             <GithubIcon />
           </motion.a>
           <button
-            className={`ml-3 flex items-center justify-center rounded-full p-1
+            className={`ml-3 flex items-center justify-center w-7 rounded-full p-1
             ${mode === 'light' ? 'bg-dark text-light' : 'bg-light text-dark'}
             sm:mx-1
           `}
             onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
           >
             {mode === 'dark' ? (
-              <SunIcon className="fill-dark text-sm" />
+              <SunIcon className="fill-dark" />
             ) : (
-              <MoonIcon className="fill-dark text-sm" />
+              <MoonIcon className="fill-dark" />
             )}
           </button>
         </nav>

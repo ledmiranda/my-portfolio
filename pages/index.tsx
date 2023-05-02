@@ -28,7 +28,7 @@ const Home: NextPage = () => {
                 50vw"
               />
             </div>
-            <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
+            <div className="w-1/2 flex flex-col items-center self-center pt-3 lg:w-full lg:text-center">
               <AnimatedText
                 text="Fullstack Developer & Front-End Developer"
                 className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
@@ -44,9 +44,9 @@ const Home: NextPage = () => {
                 <Link
                   href={ContactInfo.pdfPath}
                   target="_blank"
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light 
+                  className="w-40 flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light 
                     hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark
-                    hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base"
+                    hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base md:w-32"
                   download={true}
                 >
                   Resume <LinkArrow className="w-6 ml-1" />
@@ -54,7 +54,7 @@ const Home: NextPage = () => {
                 <Link
                   href={ContactInfo.mailTo}
                   target="_blank"
-                  className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base"
+                  className="w-16 ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base"
                 >
                   Contact
                 </Link>
