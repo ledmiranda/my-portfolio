@@ -30,7 +30,6 @@ const FeaturedArticle = ({
         <FramerImage
           width={200}
           height={200}
-          priority
           sizes="(max-width: 768px) 100vw,
           (max-width: 1200px) 50vw,
           50vw"

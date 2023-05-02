@@ -56,7 +56,6 @@ const AboutPage = () => {
                 src={profilePhoto}
                 alt="dev-photo"
                 className="w-full h-auto rounded-2xl bg-dark"
-                priority
                 sizes="(max-width: 768px) 100vw,
                 (max-width: 1200px) 50vw,
                 33vw"

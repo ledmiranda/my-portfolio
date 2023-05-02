@@ -23,7 +23,6 @@ const Home: NextPage = () => {
                 src={profilePic}
                 alt="DevImage"
                 className="w-full h-auto lg:hidden md:inline-block md:w-full"
-                priority
                 sizes="(max-width: 768px) 100vw,
                 (max-width: 1200px) 50vw,
                 50vw"
