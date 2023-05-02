@@ -7,7 +7,6 @@ import SunIcon from '../icons/sun-icon';
 import MoonIcon from '../icons/moon-icon';
 import { useState } from 'react';
 import Menu from './menu';
-import Logo from './logo';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -56,7 +55,7 @@ const NavBar = () => {
             target="_blank"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
-            className="w-6 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1"
+            className="w-6 mx-3 bg-light rounded-full text-dark dark:text-light dark:bg-dark sm:mx-1"
           >
             <GithubIcon />
           </motion.a>
