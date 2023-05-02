@@ -57,7 +57,7 @@ const SmallProject = ({
             target="_blank"
             className="hover:underline underline-offset-2"
           >
-            <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+            <h2 className="my-2 text-dark w-full text-left text-3xl font-bold lg:text-2xl dark:text-light">
               {title}
             </h2>
           </Link>
@@ -65,11 +65,15 @@ const SmallProject = ({
             <Link
               href={link}
               target="_blank"
-              className="text-lg font-semibold underline md:text-base"
+              className="text-lg text-dark font-semibold underline md:text-base dark:text-light"
             >
               Visit
             </Link>
-            <Link href={githubLink} target="_blank" className="w-8 md:w-6">
+            <Link
+              href={githubLink}
+              target="_blank"
+              className="w-8 text-dark dark:text-light md:w-6"
+            >
               <GithubIcon />
             </Link>
           </div>

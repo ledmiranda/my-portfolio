@@ -53,7 +53,7 @@ const Project = ({ type, title, summary, img, link, githubLink }: IProject) => {
             target="_blank"
             className="hover:underline underline-offset-2"
           >
-            <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm">
+            <h2 className="my-2 text-dark w-full text-left text-4xl font-bold dark:text-light sm:text-sm">
               {title}
             </h2>
           </Link>
@@ -63,13 +63,18 @@ const Project = ({ type, title, summary, img, link, githubLink }: IProject) => {
             </p>
           )}
           <div className="mt-2 flex items-center">
-            <Link href={githubLink} target="_blank" className="w-10">
+            <Link
+              href={githubLink}
+              target="_blank"
+              className="w-10 text-dark dark:text-light"
+            >
               <GithubIcon />
             </Link>
             <Link
               href={link}
               target="_blank"
-              className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
+              className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold 
+                dark:bg-light dark:text-dark sm:px-4 sm:text-base"
             >
               Visit Project
             </Link>
