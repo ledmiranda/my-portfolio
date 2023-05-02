@@ -16,7 +16,7 @@ const Timeline = ({ sectionTitle, timelineInfo }: ITimeLine) => {
 
   return (
     <div className="my-64">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
+      <h2 className="font-bold text-dark text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16 dark:text-light">
         {sectionTitle}
       </h2>
       <div className="w-[75%] mx-auto relative lg:w-[90%] md:w-full" ref={ref}>

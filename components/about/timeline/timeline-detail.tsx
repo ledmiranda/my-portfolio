@@ -30,7 +30,7 @@ const TimelineDetail = ({
         transition={{ duration: 0.5, type: 'spring' }}
       >
         <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
-          {title}&nbsp;
+          <span className="text-dark dark:text-light">{title}</span>&nbsp;
           {company && (
             <span className="text-primary dark:text-primaryDark capitalize">
               @{company}
@@ -40,7 +40,9 @@ const TimelineDetail = ({
         <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
           {time} | {location}
         </span>
-        <p className="font-medium w-full md:text-sm">{description}</p>
+        <p className="font-medium w-full md:text-sm text-dark dark:text-light">
+          {description}
+        </p>
       </motion.div>
     </li>
   );
