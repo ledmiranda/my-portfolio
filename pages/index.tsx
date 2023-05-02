@@ -38,7 +38,7 @@ const Home: NextPage = () => {
                 experience in producing robust code for high-volume companies by
                 designing and developing applications using the current
                 technologies in the market: React, Angular, Node.js, Typescript
-                and Javascript,
+                and Javascript.
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
