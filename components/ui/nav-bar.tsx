@@ -1,6 +1,4 @@
 import { motion } from 'framer-motion';
-import Logo from './logo';
-import CustomLink from './custom-link';
 import GithubIcon from '../icons/github-icon';
 import LinkedInIcon from '../icons/linkedin-icon';
 import { PersonalLinks } from '../../models/personal-info';
@@ -9,6 +7,7 @@ import SunIcon from '../icons/sun-icon';
 import MoonIcon from '../icons/moon-icon';
 import { useState } from 'react';
 import Menu from './menu';
+import Logo from './logo';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +20,7 @@ const NavBar = () => {
   return (
     <header
       className="w-full px-32 py-8 font-medium flex items-center justify-between
-      dark:text-light relative"
+      dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8"
     >
       <button
         className="flex-col justify-center items-center hidden lg:flex"
@@ -75,9 +74,6 @@ const NavBar = () => {
             )}
           </button>
         </nav>
-        <div className="absolute left-[50%] top-2 translate-x-[-50%]">
-          <Logo />
-        </div>
       </Menu>
     </header>
   );

@@ -2,6 +2,7 @@ import { ReactElement } from 'react';
 import CustomLink from './custom-link';
 import CustomMobileLink from './custom-mobile-link';
 import { motion } from 'framer-motion';
+import Logo from './logo';
 
 interface IMenu {
   children: ReactElement | ReactElement[];
@@ -48,6 +49,9 @@ const Menu = ({ children, isOpen, onClick }: IMenu) => {
           </div>
         </motion.div>
       )}
+      <div className="absolute left-[50%] top-2 translate-x-[-50%]">
+        <Logo />
+      </div>
     </>
   );
 };

@@ -14,8 +14,11 @@ const ArticlesPage = () => {
       </Head>
       <div className="flex w-full flex-col items-center justify-center mb-16 overflow-hidde dark:text-light">
         <Layout className="pt-16">
-          <AnimatedText text="Dev articles" className="mb-16" />
-          <ul className="grid grid-cols-2 gap-16">
+          <AnimatedText
+            text="Dev articles"
+            className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+          />
+          <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
             {ArticlesInfo.map(({ img, title, time, summary, link }) => (
               <FeaturedArticle
                 key={title}
