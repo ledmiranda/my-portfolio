@@ -12,18 +12,18 @@ export const SkillsInfo: SkillInfo[] = [
   },
   {
     name: 'Angular',
-    xPosition: '-10vw',
-    yPosition: '-5vw',
+    xPosition: '-12vw',
+    yPosition: '-6vw',
   },
   {
     name: 'React',
     xPosition: '10vw',
-    yPosition: '0vw',
+    yPosition: '-10vw',
   },
   {
     name: 'Typescript',
-    xPosition: '0vw',
-    yPosition: '12vw',
+    xPosition: '-5vw',
+    yPosition: '15vw',
   },
   {
     name: 'NextJS',
@@ -32,23 +32,23 @@ export const SkillsInfo: SkillInfo[] = [
   },
   {
     name: 'Redux',
-    xPosition: '-25vw',
-    yPosition: '-5vw',
+    xPosition: '-29vw',
+    yPosition: '-9vw',
   },
   {
     name: 'Node.js',
-    xPosition: '-20vw',
-    yPosition: '-15vw',
+    xPosition: '-27vw',
+    yPosition: '-20vw',
   },
   {
     name: 'CSS',
-    xPosition: '15vw',
-    yPosition: '-12vw',
+    xPosition: '20vw',
+    yPosition: '-20vw',
   },
   {
     name: 'HTML',
-    xPosition: '-6vw',
-    yPosition: '-13vw',
+    xPosition: '-10vw',
+    yPosition: '-15vw',
   },
   {
     name: 'Git',
@@ -63,7 +63,7 @@ export const SkillsInfo: SkillInfo[] = [
   {
     name: 'Scrum',
     xPosition: '0vw',
-    yPosition: '-20vw',
+    yPosition: '-25vw',
   },
   {
     name: 'SQL',
